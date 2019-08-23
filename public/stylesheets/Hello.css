@@ -1,0 +1,70 @@
+
+
+.HelloContainer {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 7rem;
+  font-weight: 900;
+  /*border-right: 5px;
+  border-right-style: solid;
+  border-right-color: black;*/
+}
+
+
+
+.Hudson {
+  height: 150px;
+  width: auto;
+  padding-left: 200px;
+  font-family: "Montserrat";
+
+}
+
+.Will {
+  height: 150px;
+  width: auto;
+  align-self: center;
+  font-family: "Montserrat";
+}
+
+.Gribble {
+  height: 150px;
+  width: auto;
+  padding-right: 200px;
+  align-self: flex-end;
+  font-family: "Montserrat";
+}
+
+@media only screen and (max-width: 576px) {
+  .Will {
+    align-self: flex-start;
+    padding-left: 20px;
+  }
+
+  .Gribble {
+    align-self: flex-start;
+    padding-right: 0px;
+    padding-left: 20px;
+  }
+
+  .Hudson {
+    padding-left: 20px;
+  }
+
+  .HelloContainer {
+    display: flex;
+    height: 100%;
+    max-width: 566px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 5rem;
+    /*border-right: 5px;
+    border-right-style: solid;
+    border-right-color: black;*/
+  }
+}

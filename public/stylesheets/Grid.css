@@ -1,0 +1,207 @@
+html {
+  font-size: 16px;
+}
+.App-Container {
+  display: grid;
+  grid-template-columns: 60px auto auto 60px;
+  grid-template-rows: 60px auto auto auto auto 60px;
+  grid-template-areas:
+    "nav header header sidebar"
+    "nav mainleft mainright sidebar"
+    "nav SkillsLeft SkillsRight sidebar"
+    "nav ProjectsLeft ProjectsRight sidebar"
+    "nav ContactLeft ContactRight sidebar"
+    "nav footer footer sidebar";
+  height: "auto";
+  width: "auto";
+}
+
+
+.Hello {
+  display: grid;
+  grid-column-start: mainleft;
+  grid-column-end: mainright;
+  grid-row: 2;
+  min-height: calc(100vh - 120px);
+  max-height: max-content;
+  background-color: #f8f8f8;
+
+}
+
+.Skills {
+  display: grid;
+  grid-column-start: SkillsLeft;
+  grid-column-end: SkillsRight;
+  grid-row: 3;
+  min-height: calc(100vh - 120px);
+  max-height: max-content;
+  background-color: #f8f8f8;
+  /*#f8f8f8;*/
+}
+
+.Projects {
+  display: grid;
+  grid-column-start: ProjectsLeft;
+  grid-column-end: ProjectsRight;
+  grid-row: 4;
+  min-height: calc(100vh - 120px);
+  max-height: max-content;
+  background-color: #f8f8f8;
+}
+
+.Contact {
+  display: grid;
+  grid-column-start: ContactLeft;
+  grid-column-end: ContactRight;
+  grid-row: 5;
+  min-height: calc(100vh - 120px);
+  max-height: max-content;
+  background-color: #f8f8f8;
+}
+
+div.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 60px;
+  background-color: white;
+  z-index: 100;
+}
+
+div.leftNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 60px;
+  background-color: white;
+
+}
+
+div.rightNav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 60px;
+  background-color: white;
+
+}
+
+div.footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 60px;
+  background-color: white;
+  z-index: 100;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 576px) {
+  .App-Container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 20px auto auto auto auto 20px;
+    grid-template-areas:
+      "header header"
+      "mainleft mainright"
+      "SkillsLeft SkillsRight"
+      "ProjectsLeft ProjectsRight"
+      "ContactLeft ContactRight"
+      "footer footer";
+    height: "auto";
+    width: "auto";
+  }
+
+  div.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 20px;
+    background-color: white;
+    z-index: 100;
+  }
+
+  .Hello {
+    display: grid;
+    grid-column-start: mainleft;
+    grid-column-end: mainright;
+    grid-row: 2;
+    min-height: calc(100vh - 40px);
+    max-height: max-content;
+    background-color: #f8f8f8;
+    width: 100%;
+
+  }
+
+  .Skills {
+    display: grid;
+    grid-column-start: SkillsLeft;
+    grid-column-end: SkillsRight;
+    grid-row: 3;
+    min-height: calc(100vh - 40px);
+    max-height: max-content;
+    background-color: #f8f8f8;
+    width: 100%;
+
+    /*#f8f8f8;*/
+  }
+
+  .Projects {
+    display: grid;
+    grid-column-start: ProjectsLeft;
+    grid-column-end: ProjectsRight;
+    grid-row: 4;
+    min-height: calc(100vh - 40px);
+    max-height: max-content;
+    background-color: #f8f8f8;
+  }
+
+  .Contact {
+    display: grid;
+    grid-column-start: ContactLeft;
+    grid-column-end: ContactRight;
+    grid-row: 5;
+    min-height: calc(100vh - 40px);
+    max-height: max-content;
+    background-color: #f8f8f8;
+  }
+
+  div.leftNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 60px;
+    background-color: white;
+    display: none;
+
+  }
+
+  div.rightNav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 60px;
+    background-color: white;
+    display: none;
+
+  }
+
+  div.footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 20px;
+    background-color: white;
+    z-index: 100;
+  }
+
+
+}

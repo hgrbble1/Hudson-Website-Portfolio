@@ -1,0 +1,361 @@
+
+.ContactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.ContactsHeader {
+  align-self: flex-end;
+  height: 150px;
+  width: auto;
+  font-family: "Montserrat";
+  font-size: 100px;
+  font-weight: 900;
+  margin-top: 50px;
+  padding-right: 200px;
+
+}
+
+.ContactSVG {
+  padding-left: 150px;
+  width: auto;
+  height: auto;
+  align-self: flex-start;
+}
+
+
+
+.EmailContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.EmailForm {
+  width: 700px;
+  height: 540px;
+  background-color: inherit;
+  align-self: flex-end;
+  border-bottom: 0px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 0px;
+  align-self: flex-end;
+  margin-right: 200px;
+}
+
+.ContactMe {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.ContactMeMessage {
+  margin-left: 200px;
+  margin-right: auto;
+
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.rightArrow {
+  animation: wave 1s ease infinite alternate;
+
+}
+
+.rightArrow2 {
+  animation: wave 1s ease 0.2s infinite alternate;
+}
+
+.rightArrow3 {
+  animation: wave 1s ease 0.4s infinite alternate;
+}
+
+.Form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.formGroup {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.Name {
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  margin-left: 80px;
+  color: black;
+  background-color: inherit;
+  border-bottom: 2px solid black;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 2px solid black;
+}
+
+.LastName {
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  margin-top: 40px;
+  margin-left: 80px;
+  color: #f8f8f8;
+  border-style: none;
+  background-color: black;
+}
+
+.Email {
+  width: 400px;
+  height: 40px;
+  font-size: 20px;
+  margin-top: 40px;
+  margin-left: 80px;
+  color: black;
+  background-color: inherit;
+  border-bottom: 2px solid black;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 2px solid black;
+}
+
+.Message {
+  width: 500px;
+  height: 200px;
+  font-size: 20px;
+  margin-top: 40px;
+  margin-left: 80px;
+  color: black;
+  background-color: inherit;
+  border-bottom: 2px solid black;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 2px solid black;
+}
+
+.Button {
+  width: 150px;
+  height: 40px;
+  font-size: 20px;
+  margin-top: 40px;
+  margin-left: 80px;
+  color: #f8f8f8;
+  border-style: none;
+  background-color: black;
+  cursor: pointer;
+  margin-bottom: 40px;
+
+}
+
+.Button:hover {
+  border: 1px solid white;
+}
+
+.animation_element {
+  opacity: 0;
+  background-color: inherit;
+  height: auto;
+
+}
+
+.g-recaptcha {
+  margin-left: 80px;
+}
+
+.animation_element.slide-left {
+  opacity: 0;
+  transition: all 1s linear;
+  transform: translate3d(-500px, 0px, 0px);
+}
+
+.animation_element.slide-left.in-view {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.ThirdRow {
+  display: flex;
+
+}
+
+.EmailSent {
+  font-size: 25px;
+  margin-left: 80px;
+  align-self: flex-end;
+  font-family: 'Source Code Pro', sans-serif;
+  font-weight: 600;
+  transition: all 1s linear;
+  opacity: 0;
+  width: 500px;
+  margin-bottom: 40px;
+}
+
+.closing {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #f8f8f8;;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.closing:hover {
+  background-color: grey;
+}
+
+.ButtonformGroup {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+/*
+saving this for the arrow right keyboard
+left: 12px;
+    top: -17px;
+    width: 100px;
+    height: 100px;
+*/
+
+@media only screen and (max-width:576px) {
+  .ContactsHeader {
+    align-self: center;
+    height: auto;
+    width: auto;
+    font-family: "Montserrat";
+    font-size: 4rem;
+    font-weight: 900;
+    margin-top: 3.5rem;
+    padding-right: 0px;
+  }
+
+  .ContactMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .ContactMeMessage {
+    margin-left: 200px;
+    margin-right: auto;
+    display: none;
+  }
+
+  .EmailForm {
+    width: 100%;
+    height: auto;
+    background-color: inherit;
+    align-self: flex-start;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 0px;
+    align-self: flex-end;
+    margin-right: 0px;
+  }
+
+  .animation_element {
+    opacity: 1;
+    background-color: inherit;
+
+  }
+
+  .animation_element.slide-left {
+    opacity: 1;
+    transition: all 1s linear;
+    transform: translate3d(0px, 0px, 0px);
+  }
+
+  .EmailSent {
+    display: none;
+  }
+
+  .Email {
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 20px;
+    color: black;
+    background-color: inherit;
+    border-bottom: 2px solid black;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 2px solid black;
+  }
+
+  .Message {
+    width: 300px;
+    height: 200px;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 20px;
+    color: black;
+    background-color: inherit;
+    border-bottom: 2px solid black;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 2px solid black;
+  }
+
+  .Button {
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    color: #f8f8f8;
+    border-style: none;
+    background-color: black;
+    cursor: pointer;
+  }
+
+  .Name {
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 40px;
+    color: black;
+    background-color: inherit;
+    border-bottom: 2px solid black;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 2px solid black;
+  }
+  .formGroup {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+
+  .g-recaptcha {
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+
+}
