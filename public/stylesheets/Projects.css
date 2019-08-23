@@ -48,7 +48,7 @@
     width: 400px;
     background-color: black;
     margin: 2px;
-    background-image: url(/svgs/GA-Matcher.svg);
+    background-image: url(/svgs/GaMatcher.svg);
     background-size: 500px 350px;
     justify-content: center;
     flex-grow: 100%;
@@ -78,7 +78,7 @@
     width: 400px;
     background-color: black;
     margin: 2px;
-    background-image: url(/svgs/ApiGlossaryIcon.svg);
+    background-image: url(/svgs/APIGlossaryIcon.svg);
     background-size: 450px 390px;
     justify-content: center;
     flex-grow: 100%;
@@ -242,7 +242,7 @@
     width: auto;
     background-color: #f8f8f8;
     margin: 0px;
-    background-image: url(/svgs/GaMatcherFinal4.svg);
+    background-image: url(/svgs/GaMatcher.svg);
     background-size: 110%;
     justify-content: center;
     flex-grow: 105%;
@@ -257,7 +257,7 @@
     width: auto;
     background-color: #f8f8f8;
     margin: 0px;
-    background-image: url(/svgs/NodeSentFinal3.svg);
+    background-image: url(/svgs/NodeSent.svg);
     background-size: 105%;
     justify-content: center;
     flex-grow: 100%;
@@ -272,7 +272,7 @@
     width: auto;
     background-color: #f8f8f8;
     margin: 0px;
-    background-image: url(/svgs/APIGlossaryFinal3.svg);
+    background-image: url(/svgs/APIGlossary.svg);
     background-size: 105%;
     justify-content: center;
     flex-grow: 100%;
